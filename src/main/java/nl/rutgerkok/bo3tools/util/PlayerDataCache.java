@@ -22,7 +22,7 @@ import org.bukkit.entity.Player;
  * <p>
  * Implementation detail: the player instances aren't referenced here, instead
  * their names are used.
- * 
+ *
  * @param <T>
  *            The type of data to store.
  */
@@ -43,7 +43,7 @@ public class PlayerDataCache<T> {
 
     /**
      * Constructs a new cache.
-     * 
+     *
      * @param timeToLive
      *            The time to live for the data, in milliseconds. Setting this
      *            to 0 or a negative value will cause the data to be removed
@@ -58,7 +58,7 @@ public class PlayerDataCache<T> {
      * Gets a value for that player. Returns null if the value is not found.
      * Expired data will never be returned, even if {@link #hearthBeat()} hasn't
      * been called yet.
-     * 
+     *
      * @param player
      *            The player to look up.
      * @return The data, or null if not found.
@@ -84,7 +84,7 @@ public class PlayerDataCache<T> {
      * Expired data will never be returned, even if {@link #hearthBeat()} hasn't
      * been called yet. The value for the player will immediately be removed
      * from the cache.
-     * 
+     *
      * @param player
      *            The player get the value of.
      * @return The value, or null if not found.
@@ -119,7 +119,7 @@ public class PlayerDataCache<T> {
     /**
      * Removes the value for that player. If the player had nothing stored, this
      * won't do anything.
-     * 
+     *
      * @param player
      *            The player.
      */
@@ -129,7 +129,7 @@ public class PlayerDataCache<T> {
 
     /**
      * Sets a new value for that player.
-     * 
+     *
      * @param player
      *            The player.
      * @param value

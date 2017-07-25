@@ -28,12 +28,12 @@ import com.khorn.terraincontrol.customobjects.bo2.BO2;
 import com.khorn.terraincontrol.customobjects.bo3.BO3;
 
 /**
- * 
+ *
  * Like the BO2 convert command, but this converts all BO2s in either the global
  * or the world folder.
- * 
+ *
  * @author Casper van Battum (Creator13)
- * 
+ *
  */
 public class BO2ConvertFolderCommand implements TabExecutor {
     private static final String GLOBAL = "global";
@@ -104,7 +104,7 @@ public class BO2ConvertFolderCommand implements TabExecutor {
     /**
      * Converts all BO2s in the CustomObject collection. Ignores all other
      * objects in the list.
-     * 
+     *
      * @param author
      *            The author that should be used for the objects.
      * @param objects

@@ -20,7 +20,7 @@ public class BO2Converter {
     /**
      * Converts the given BO2 into a new BO3 object. All blocks and most
      * settings are converted. The BO3 isn't saved.
-     * 
+     *
      * @param authorName
      *            Name that is used in the author setting of the BO3.
      * @param bo2

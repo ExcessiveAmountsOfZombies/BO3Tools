@@ -11,9 +11,9 @@ import org.bukkit.entity.Entity;
  * An alternative location object to Bukkit's location. This class only stores 3
  * integers and one string, so it costs less memory. It is immutable, so it can
  * be used as a key in hashmaps.
- * 
+ *
  * The static methods are not threadsafe, only call them from the main thread.
- * 
+ *
  */
 public class BlockLocation {
     private static Location workLocation;
@@ -28,7 +28,7 @@ public class BlockLocation {
     /**
      * Gets the BlockLocation of the block. Can only be used from the main
      * thread.
-     * 
+     *
      * @param block
      *            The block.
      * @return The BlockLocation of the block.
@@ -40,7 +40,7 @@ public class BlockLocation {
     /**
      * Gets the BlockLocation of the entity. Doesn't create additional Location
      * instances. Can only be used from the main thread.
-     * 
+     *
      * @param entity
      *            The entity.
      * @return The BlockLocation of the entity.
@@ -60,7 +60,7 @@ public class BlockLocation {
 
     /**
      * Creates a new BlockLocation.
-     * 
+     *
      * @param world
      *            World of the location.
      * @param x
@@ -90,7 +90,7 @@ public class BlockLocation {
      * square root.. If you are calling this function in a loop, you can better
      * get the squared distance, and compared that with the squared
      * minimum/maximum distance.
-     * 
+     *
      * @param that
      *            The other location.
      * @return The distance between the locations, or NaN.
@@ -103,7 +103,7 @@ public class BlockLocation {
      * Returns the squared distance between two locations. Returns
      * {@link Double#NaN} if the other location is null, or if the other
      * location is in a different world.
-     * 
+     *
      * @param that
      *            The other location.
      * @return The squared distance between the locations, or NaN.
@@ -148,7 +148,7 @@ public class BlockLocation {
     /**
      * Gets the world of this location. Warning: may return null if the world
      * has been unloaded.
-     * 
+     *
      * @return The world, or null if unloaded.
      */
     public World getWorld() {
@@ -157,7 +157,7 @@ public class BlockLocation {
 
     /**
      * Gets the world name of this location.
-     * 
+     *
      * @return The world name.
      */
     public String getWorldName() {
@@ -166,7 +166,7 @@ public class BlockLocation {
 
     /**
      * Gets the x position of this location.
-     * 
+     *
      * @return The x position of this location.
      */
     public int getX() {
@@ -175,7 +175,7 @@ public class BlockLocation {
 
     /**
      * Gets the y position of this location.
-     * 
+     *
      * @return The y position of this location.
      */
     public int getY() {
@@ -184,7 +184,7 @@ public class BlockLocation {
 
     /**
      * Gets the z position of this location.
-     * 
+     *
      * @return The z position of this location.
      */
     public int getZ() {

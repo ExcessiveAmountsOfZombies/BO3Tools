@@ -11,7 +11,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
 public class BO3Tools extends JavaPlugin {
-    public static final int MAX_DISTANCE = 32;
+    public static final int MAX_DISTANCE = 64;
     public static final int MAX_DISTANCE_SQUARED = MAX_DISTANCE * MAX_DISTANCE;
 
     private PlayerDataCache<NextBO3Data> playerDataCache;
@@ -19,7 +19,7 @@ public class BO3Tools extends JavaPlugin {
     /**
      * Gets the data for the next BO3 of the player. If there is no data yet, it
      * will be created.
-     * 
+     *
      * @param player
      *            The player.
      * @return The data for the next BO3.
@@ -57,7 +57,7 @@ public class BO3Tools extends JavaPlugin {
     /**
      * Removes the data for the next BO3. Call this after a BO3 has been
      * created.
-     * 
+     *
      * @param player
      *            The affected player.
      */
@@ -69,7 +69,7 @@ public class BO3Tools extends JavaPlugin {
      * Utility method to get the name of the command sender. If the sender is a
      * player, the name of the player is used, otherwise the method returns
      * "Unknown".
-     * 
+     *
      * @param sender
      *            The sender to get the name from.
      * @return The name

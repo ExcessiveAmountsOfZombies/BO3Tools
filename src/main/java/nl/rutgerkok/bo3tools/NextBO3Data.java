@@ -21,7 +21,7 @@ public class NextBO3Data {
     /**
      * Adds a block check to the next created BO3. It will check for the block
      * at the specified location.
-     * 
+     *
      * @param blockLocation
      *            The location of the block check.
      * @return True if the block check was added, false if the block was already
@@ -35,7 +35,7 @@ public class NextBO3Data {
      * Checks if the BO3 created with these parameters will be valid. It will
      * throw an {@link InvalidBO3Exception} if the BO3 will be too big, or if
      * not all points are in the same world.
-     * 
+     *
      * @param worldEditSelection
      *            The selection of the user.
      * @throws InvalidBO3Exception
@@ -73,7 +73,7 @@ public class NextBO3Data {
      * Gets the center of the BO3 object. If the user has selected a center
      * using {@link #setCenter(BlockLocation)}, that center will be returned,
      * otherwise the center of the bottom of the selection will be returned.
-     * 
+     *
      * @param worldEditSelection
      *            The WorldEdit selection of the player.
      * @return The center of the BO3 object.
@@ -90,7 +90,7 @@ public class NextBO3Data {
 
     /**
      * Gets the center of the botton of the selection.
-     * 
+     *
      * @param worldEditSelection
      *            The selection.
      * @return The center of the bottom.
@@ -106,7 +106,7 @@ public class NextBO3Data {
 
     /**
      * Removes a block check of the next created BO3.
-     * 
+     *
      * @param blockLocation
      *            The location of the block check.
      * @return True if the block check was removed, false if the block wasn't
@@ -118,7 +118,7 @@ public class NextBO3Data {
 
     /**
      * Removes all block checks, if any.
-     * 
+     *
      * @return If there were previously no block checks, this will return false.
      */
     public boolean removeAllBlockChecks() {
@@ -131,7 +131,7 @@ public class NextBO3Data {
 
     /**
      * Sets the center of the next BO3.
-     * 
+     *
      * @param center
      *            The center of the next BO3.
      */
@@ -141,7 +141,7 @@ public class NextBO3Data {
 
     /**
      * Gets all block checks. Set cannot be modified.
-     * 
+     *
      * @return All block checks.
      */
     public Set<BlockLocation> getBlockChecks() {
